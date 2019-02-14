@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 10, 2017, 2:15:42 AM
+    Author     : manar
+*/
+AnchorPane{
+    -fx-background-color:#ffffff;
+    -fx-background-size:100%;
+    -fx-backgound-raduis:10;
+    -fx-border-width:2px;
+    -fx-border-raduis:10;
+    -fx-effect:dropshadow(three-pass-box,rgb(0,0,0,0.8),10,0,0,0);
+    -fx-border-style:solid;    
+  /*  -fx-background-image:url("../img/ididid.jpg");*/
+}

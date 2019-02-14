@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.admin_InvoicesController">
+   <children>
+      <ImageView fitHeight="464.0" fitWidth="642.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/ididid.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="64.0" layoutY="11.0" prefHeight="44.0" prefWidth="189.0" text="   Invoices" textFill="#782626">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="29.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/1.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableViewInvoices" layoutX="14.0" layoutY="107.0" prefHeight="284.0" prefWidth="578.0" />
+      <JFXButton layoutX="313.0" layoutY="401.0" onAction="#deleteSelected" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #782626;" text="Delete Selected" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="370.0" layoutY="406.0" onAction="#ModeifiedSelected" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #782626;" text="Modifeid Selected" textFill="WHITE" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="159.0" layoutY="401.0" onAction="#PrintSelected" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #782626;" text="Print Selected" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="11.0" layoutY="418.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="nextimage" fitHeight="25.0" fitWidth="20.0" layoutX="564.0" layoutY="421.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/000.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imageSearch" fitHeight="25.0" fitWidth="27.0" layoutX="447.0" layoutY="68.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/refreshTwo32.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="textSearch" layoutX="38.0" layoutY="64.0" prefHeight="33.0" prefWidth="402.0" promptText="       Employee Name" style="-fx-background-image:url('img/loupe.png'); -fx-background-repeat:no-repeat;  -fx-background-position:left;" stylesheets="@textSearch.css" />
+      <ComboBox fx:id="possibilitySearch" layoutX="440.0" layoutY="21.0" prefHeight="25.0" prefWidth="138.0" promptText="Customer Name" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></ComboBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.EmployeeController">
+    <children>
+        <ImageView fitHeight="464.0" fitWidth="624.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/ididid.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="56.0" layoutY="25.0" prefHeight="51.0" prefWidth="547.0" style="-fx-background-color: #782626;" text="     Home" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="61.0" fitWidth="62.0" layoutX="13.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+        <AnchorPane layoutX="85.0" layoutY="83.0" prefHeight="352.0" prefWidth="450.0" style="-fx-border-width: 2; -fx-border-color: #ffffff;">
+            <children>
+                <JFXButton layoutX="39.0" layoutY="142.0" onAction="#InsetItems" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #782626;" text="Insert Items" textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+                </JFXButton>
+                <JFXButton layoutX="278.0" layoutY="142.0" onAction="#introducingSalce" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #782626;" text="Introducing Salces" textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+                </JFXButton>
+                <JFXButton layoutX="39.0" layoutY="313.0" onAction="#Invoices" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #782626;" text="Invoices" textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+                </JFXButton>
+                <JFXButton layoutX="279.0" layoutY="313.0" onAction="#reviewOfTheLost" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #782626;" text="Reviow of the Lost" textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+                </JFXButton>
+                <ImageView fitHeight="126.0" fitWidth="103.0" layoutX="45.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                      <Image url="img/new_database-512.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="126.0" fitWidth="132.0" layoutX="276.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                      <Image url="img/introd.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="126.0" fitWidth="132.0" layoutX="275.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                  <Image url="img/review.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="126.0" fitWidth="103.0" layoutX="45.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="img/invoices.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="44.0" fitWidth="36.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+          <Image url="img/home.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="569.0" layoutY="106.0" onMouseClicked="#notification" pickOnBounds="true" preserveRatio="true">
+            <image>
+              <Image url="img/not.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="141.0" layoutX="14.0" layoutY="404.0" onMouseClicked="#Close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="569.0" layoutY="148.0" onMouseClicked="#settings" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.Admin_Invoices0Controller">
+   <children>
+      <ImageView fitHeight="464.0" fitWidth="624.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/ididid.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="74.0" layoutY="21.0" prefHeight="44.0" prefWidth="189.0" text=" Invoices" textFill="#782626">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="54.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="46.0" layoutX="10.0" layoutY="394.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="customerName" layoutX="74.0" layoutY="102.0" onMousePressed="#clear" prefHeight="33.0" prefWidth="168.0" promptText="Supplier  Name" />
+      <TextField fx:id="PhoneNumber" layoutX="257.0" layoutY="102.0" onKeyTyped="#onlyNumber" onMousePressed="#clear" prefHeight="33.0" prefWidth="168.0" promptText="Phone Number" />
+      <DatePicker fx:id="Date" layoutX="71.0" layoutY="177.0" onMouseClicked="#clear" prefHeight="33.0" prefWidth="174.0" promptText="Date" />
+      <ComboBox fx:id="ItemType" layoutX="263.0" layoutY="177.0" onMouseClicked="#clear" opacity="0.9" prefHeight="33.0" prefWidth="168.0" promptText="Item Type" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></ComboBox>
+      <TextField fx:id="goodCount" layoutX="443.0" layoutY="102.0" onKeyTyped="#onlyNumber" onMousePressed="#clear" prefHeight="33.0" prefWidth="168.0" promptText="good Count" />
+      <JFXCheckBox fx:id="imported" layoutX="475.0" layoutY="31.0" onAction="#sel" prefHeight="25.0" prefWidth="112.0" selected="true" text="Imported" textFill="#5a5a5a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="sold" layoutX="475.0" layoutY="59.0" onAction="#sel" prefHeight="25.0" prefWidth="104.0" text="Sold" textFill="#5a5a5a">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXCheckBox>
+      <Button layoutX="180.0" layoutY="282.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: #FDD158; -fx-graphic: url('img/printer_1.png');" text="Print" textFill="#9a671b">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="don" layoutX="301.0" layoutY="282.0" mnemonicParsing="false" onAction="#done" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: #279AC6;  -fx-graphic: url('img/001-mark.png');" text="Done" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="st" layoutX="62.0" layoutY="93.0" prefHeight="51.0" prefWidth="4.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="st3" layoutX="56.0" layoutY="177.0" prefHeight="51.0" prefWidth="13.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="st4" layoutX="250.0" layoutY="177.0" prefHeight="51.0" prefWidth="4.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="st2" layoutX="426.0" layoutY="93.0" prefHeight="51.0" prefWidth="13.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="st1" layoutX="244.0" layoutY="93.0" prefHeight="51.0" prefWidth="0.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="st5" layoutX="462.0" layoutY="34.0" prefHeight="51.0" prefWidth="4.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

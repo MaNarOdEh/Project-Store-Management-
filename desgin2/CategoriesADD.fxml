@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="464.0" fitWidth="624.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/ididid.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="63.0" layoutY="26.0" prefHeight="49.0" prefWidth="463.0" style="-fx-background-color: #782626;" text="         Categories" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameCategories" layoutX="22.0" layoutY="101.0" prefHeight="40.0" prefWidth="160.0" promptText="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="typeCategories" layoutX="22.0" layoutY="212.0" prefHeight="40.0" prefWidth="160.0" promptText="Type">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="priceCategories" layoutX="22.0" layoutY="155.0" onKeyTyped="#onlyNumber" prefHeight="40.0" prefWidth="160.0" promptText="Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="color" layoutX="194.0" layoutY="156.0" prefHeight="36.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="  Color " textFill="#a89e9e">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="colorChooser" layoutX="258.0" layoutY="159.0" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: #ffffff;" />
+      <JFXButton layoutX="69.0" layoutY="289.0" onAction="#addNewCategories" prefHeight="37.0" prefWidth="205.0" style="-fx-background-color: #591818;" text="     Add New Categories" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="69.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+         <Image url="img/image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="29.0" layoutX="14.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+           <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXCheckBox fx:id="male" layoutX="185.0" layoutY="125.0" text="Male" textFill="#591818" unCheckedColor="#591818" />
+      <JFXCheckBox fx:id="female" layoutX="273.0" layoutY="123.0" text="Female" textFill="#591818" unCheckedColor="#591818" />
+      <ImageView fitHeight="43.0" fitWidth="52.0" layoutX="187.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+        <Image url="img/aiga_toiletsq_men-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="29.0" layoutX="271.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+           <Image url="img/Female_icon.svg.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="195.0" layoutY="214.0" prefHeight="37.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Add Image" textFill="#591818">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="countCategories" layoutX="366.0" layoutY="155.0" onKeyTyped="#onlyNumber" prefHeight="40.0" prefWidth="160.0" promptText="Count">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

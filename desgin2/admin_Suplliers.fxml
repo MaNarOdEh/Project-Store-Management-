@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.admin_SuplliersController">
+   <children>
+      <ImageView fitHeight="464.0" fitWidth="624.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/ididid.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabelToShowInformationOfSupllier" layoutX="24.0" layoutY="109.0" prefHeight="296.0" prefWidth="410.0" />
+      <Label layoutX="12.0" layoutY="4.0" prefHeight="49.0" prefWidth="584.0" style="-fx-background-color: #782626;" text="    Suppliers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchSuppliers" layoutX="24.0" layoutY="70.0" prefHeight="33.0" prefWidth="344.0" promptText="    Supplier Name" style="-fx-background-image:url('img/loupe.png'); -fx-background-repeat:no-repeat;  -fx-background-position:left;" stylesheets="@textSearch.css" />
+      <ImageView fitHeight="33.0" fitWidth="28.0" layoutX="1.0" layoutY="430.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgSearch" fitHeight="25.0" fitWidth="20.0" layoutX="380.0" layoutY="74.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/refreshTwo32.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton layoutX="258.0" layoutY="427.0" onAction="#sendMessage" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #782626; -fx-graphic: url('img/message0.png')" text="Masseage" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="348.0" layoutY="427.0" onAction="#addSupppliers" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #782626; -fx-graphic: url('img/add0.png');" text="Add" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="427.0" layoutY="427.0" onAction="#Edit" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #782626; -fx-graphic: url('img/edit0.png');" text="Edit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="517.0" layoutY="427.0" onAction="#Delete" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #782626; -fx-graphic: url('img/delete0.png')" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="employeeFirstName" accessibleHelp="This is essential" layoutX="438.0" layoutY="201.0" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="159.0" promptText="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="employeePhoneNumber" layoutX="438.0" layoutY="249.0" onKeyTyped="#numberOnly" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="159.0" promptText="Phone Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailEmployee" layoutX="438.0" layoutY="297.0" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="159.0" promptText=" Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="photoOfEmployee" fitHeight="106.0" fitWidth="106.0" layoutX="472.0" layoutY="86.0" onMouseClicked="#imageSupplier" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/images.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="st" layoutX="595.0" layoutY="201.0" prefHeight="33.0" prefWidth="19.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="st1" layoutX="595.0" layoutY="249.0" prefHeight="33.0" prefWidth="19.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="st2" layoutX="595.0" layoutY="297.0" prefHeight="33.0" prefWidth="19.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn" layoutX="486.0" layoutY="338.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="73.0" text="Empty" />
+   </children>
+</AnchorPane>

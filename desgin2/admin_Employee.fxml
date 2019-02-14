@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.admin_EmployeeController">
+   <children>
+      <ImageView fitHeight="537.0" fitWidth="627.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/ididid.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchEmployee" layoutX="13.0" layoutY="71.0" prefHeight="33.0" prefWidth="416.0" promptText="     Employee Name" style="-fx-background-image:url('img/loupe.png'); -fx-background-repeat:no-repeat;  -fx-background-position:left;" stylesheets="@textSearch.css" />
+      <TableView fx:id="tabelToShowInformationOfEmployee" layoutX="2.0" layoutY="112.0" onMouseClicked="#onMouseClicked" prefHeight="304.0" prefWidth="613.0" />
+      <ImageView fitHeight="39.0" fitWidth="37.0" layoutX="39.0" layoutY="423.0" onMouseClicked="#goToTheMainAdmin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton layoutX="361.0" layoutY="430.0" onAction="#AddNewEmployee" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #782626; -fx-graphic: url('img/add0.png');" text="Add" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="527.0" layoutY="430.0" onAction="#DeleteEmployee" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #782626; -fx-graphic: url('img/delete0.png')" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="444.0" layoutY="430.0" onAction="#EditEmployee" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #782626; -fx-graphic: url('img/edit0.png');" text="Edit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="271.0" layoutY="430.0" onAction="#SendMasseage" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #782626; -fx-graphic: url('img/message0.png')" text="Masseage" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="157.0" layoutY="14.0" prefHeight="39.0" prefWidth="295.0" style="-fx-background-color: #782626;" text="                      Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgSearch" fitHeight="25.0" fitWidth="18.0" layoutX="435.0" layoutY="76.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/refreshTwo32.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

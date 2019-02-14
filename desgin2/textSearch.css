@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 9, 2017, 11:49:25 PM
+    Author     : manar
+*/
+
+.text-field{
+    -fx-border-width: 0.7px;
+    -fx-border-color: #D7D7D7;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-text-fill: black;
+    -fx-font-size: 15px; 
+    -fx-padding: 5px 35px 5px 15px;
+    -fx-background-color: white;
+}
+.text-field:focused{
+    -fx-border-color: #EA5444;
+
+}
+.text-field:hover{
+
+}
+.text-field:focused {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+}
