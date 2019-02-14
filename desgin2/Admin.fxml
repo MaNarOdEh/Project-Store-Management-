@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="admin_anchor" prefHeight="445.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.AdminController">
+    <children>
+      <ImageView fitHeight="469.0" fitWidth="712.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/ididid.jpg" />
+         </image>
+      </ImageView>
+      <JFXHamburger layoutX="359.0" layoutY="-52.0" prefHeight="37.0" prefWidth="55.0" />
+      <Label layoutX="50.0" layoutY="21.0" prefHeight="60.0" prefWidth="539.0" style="-fx-background-color: #4d1010;" text="        Home" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <JFXHamburger fx:id="hamburger" layoutX="59.0" layoutY="29.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></JFXHamburger>
+      <AnchorPane layoutX="131.0" layoutY="104.0" prefHeight="306.0" prefWidth="330.0" style="-fx-border-color: #4d1010;">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="89.0" layoutX="36.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="img/employee.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="89.0" layoutX="36.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                <!---->  <Image url="img/invoices.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="95.0" layoutX="198.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+             <!---->     <Image url="img/supplier.png" /><!--"img/01.png"-->
+               </image>
+            </ImageView>
+            <Button layoutX="198.0" layoutY="116.0" mnemonicParsing="false" onAction="#goToTheSuppliers" prefHeight="27.0" prefWidth="95.0" style="-fx-background-color: #4d1010;" text="Suppliers" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="84.0" fitWidth="115.0" focusTraversable="true" layoutX="211.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+               <Image url="img/categories.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="23.0" layoutY="116.0" mnemonicParsing="false" onAction="#goToTheInvoices" prefHeight="27.0" prefWidth="95.0" style="-fx-background-color: #4d1010;" text="Invoives" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="198.0" layoutY="263.0" mnemonicParsing="false" onAction="#goToTheategories" prefHeight="29.0" prefWidth="95.0" style="-fx-background-color: #4d1010;" text="Categories" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="23.0" layoutY="263.0" mnemonicParsing="false" onAction="#goToTheEmployees" prefHeight="27.0" prefWidth="95.0" style="-fx-background-color: #4d1010;" text="Employees" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="44.0" fitWidth="141.0" layoutX="23.0" layoutY="397.0" onMouseClicked="#Close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="img1" fitHeight="63.0" fitWidth="31.0" layoutX="557.0" layoutY="98.0" onMouseClicked="#moveToAnoutherPage" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="img/hom.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="img2" fitHeight="58.0" fitWidth="31.0" layoutX="557.0" layoutY="145.0" onMouseClicked="#moveToAnoutherPage" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="img/setting.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="img3" fitHeight="63.0" fitWidth="31.0" layoutX="557.0" layoutY="196.0" onMouseClicked="#moveToAnoutherPage" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="img/notification.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="img4" fitHeight="64.0" fitWidth="32.0" layoutX="557.0" layoutY="247.0" onMouseClicked="#moveToAnoutherPage" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="img/abou.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="img5" fitHeight="44.0" fitWidth="33.0" layoutX="557.0" layoutY="296.0" onMouseClicked="#moveToAnoutherPage" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="img/exi.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+    </children>
+</AnchorPane>

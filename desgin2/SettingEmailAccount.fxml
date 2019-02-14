@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.settingController">
+   <children>
+      <ImageView fitHeight="464.0" fitWidth="624.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/ididid.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="67.0" layoutY="26.0" prefHeight="50.0" prefWidth="484.0" style="-fx-background-color: #782626;" text="                     Change  Email Account " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="33.0" layoutX="14.0" layoutY="409.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane layoutX="130.0" layoutY="96.0" opacity="0.83" prefHeight="272.0" prefWidth="357.0" style="-fx-background-color: #FFFAF6; -fx-border-width: 3; -fx-border-color: #782626;" styleClass="#EDEDED">
+         <children>
+            <JFXButton layoutX="10.0" layoutY="175.0" onAction="#cancel" prefHeight="45.0" prefWidth="165.0" style="-fx-background-color: #279AC6;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="saveEmail" layoutX="181.0" layoutY="175.0" onAction="#save" prefHeight="45.0" prefWidth="165.0" style="-fx-background-color: #FDD158;" text="Save" textFill="#9a671b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXCheckBox fx:id="showPasswordEmail" layoutX="166.0" layoutY="136.0" onAction="#showPass" prefHeight="17.0" prefWidth="125.0" text="Show Password" textFill="#bdbab5" />
+            <TextField fx:id="newEmail" layoutX="14.0" layoutY="38.0" onKeyPressed="#clean" prefHeight="35.0" prefWidth="167.0" promptText="New Email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="currentPassword" layoutX="14.0" layoutY="97.0" onKeyPressed="#clean" prefHeight="35.0" prefWidth="167.0" promptText="Current Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="currentPasswordO" layoutX="14.0" layoutY="97.0" onKeyPressed="#clean" prefHeight="35.0" prefWidth="167.0" promptText="Current Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="forgetPassword" layoutX="8.0" layoutY="135.0" onMouseClicked="#rememmberPassword" prefHeight="23.0" prefWidth="167.0" text="Don't know your Password ?" textFill="#9a671b" visible="false">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

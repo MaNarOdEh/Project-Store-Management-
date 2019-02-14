@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.admin_EmployeeOperationController">
+   <children>
+      <ImageView fitHeight="464.0" fitWidth="639.0" layoutX="-2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/ididid.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="12.0" prefHeight="51.0" prefWidth="509.0" style="-fx-background-color: #782626;" text="             Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="39.0" layoutY="423.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="employeeFirstName" accessibleHelp="This is essential" layoutX="56.0" layoutY="108.0" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="159.0" promptText="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="salaryEmployee" layoutX="399.0" layoutY="164.0" onKeyTyped="#numberOnly" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="159.0" promptText="Salary">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="employeeLastName" layoutX="229.0" layoutY="108.0" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="159.0" promptText="Last Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="employeePhoneNumber" layoutX="56.0" layoutY="164.0" onKeyTyped="#numberOnly" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="159.0" promptText="Phone Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="PasswordT" layoutX="229.0" layoutY="164.0" prefHeight="31.0" prefWidth="159.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="noteEmployee" layoutX="56.0" layoutY="325.0" prefHeight="98.0" prefWidth="230.0" promptText="Any Note..">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="emailEmployee" layoutX="56.0" layoutY="273.0" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="230.0" promptText=" Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="396.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/aiga_toiletsq_men-512.png" />
+         </image>
+      </ImageView>
+      <JFXCheckBox fx:id="male" layoutX="389.0" layoutY="115.0" onAction="#sel" prefHeight="17.0" prefWidth="63.0" text="Male" textFill="#591818" unCheckedColor="#591818" />
+      <JFXCheckBox fx:id="female" layoutX="453.0" layoutY="115.0" onAction="#sel" prefHeight="17.0" prefWidth="63.0" text="Female" textFill="#591818" unCheckedColor="#591818" />
+      <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="463.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/Female_icon.svg.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="327.0" layoutY="374.0" onAction="#addImage" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: #ffffff;" text="Add Image" textFill="#591818">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <PasswordField fx:id="Password" layoutX="229.0" layoutY="164.0" prefHeight="31.0" prefWidth="159.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="hourOfWorkEmployee" layoutX="56.0" layoutY="218.0" onKeyTyped="#numberOnly" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="159.0" promptText="Hour Of Work">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="DateOfStartWork" layoutX="229.0" layoutY="218.0" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="159.0" promptText=" Date Of Start Work" />
+      <TextField fx:id="CountOfDayToDeliverySalary" layoutX="399.0" layoutY="217.0" onKeyTyped="#numberOnly" onMouseClicked="#removeStar" prefHeight="31.0" prefWidth="159.0" promptText="Count Of Day To Delivery Salary">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <JFXCheckBox layoutX="268.0" layoutY="195.0" onAction="#ShowPassword" prefHeight="17.0" prefWidth="119.0" text="Show Password" textFill="#591818" unCheckedColor="#591818" />
+      <ImageView fx:id="photoOfEmployee" fitHeight="106.0" fitWidth="106.0" layoutX="323.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+            <Image url="img/images.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="399.0" layoutY="423.0" onAction="#addNewCategories" prefHeight="36.0" prefWidth="205.0" style="-fx-background-color: #591818;" text="     Add New Categories" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="406.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/image.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="320.0" layoutY="260.0" orientation="VERTICAL" prefHeight="106.0" prefWidth="0.0" style="-fx-background-color: #782626;" />
+      <Separator layoutX="426.0" layoutY="260.0" orientation="VERTICAL" prefHeight="106.0" prefWidth="6.0" style="-fx-background-color: #782626;" />
+      <Separator layoutX="323.0" layoutY="257.0" prefHeight="3.0" prefWidth="106.0" style="-fx-background-color: #782626;" />
+      <Separator layoutX="323.0" layoutY="365.0" prefHeight="3.0" prefWidth="106.0" style="-fx-background-color: #782626;" />
+      <Label fx:id="st" layoutX="215.0" layoutY="105.0" prefHeight="51.0" prefWidth="19.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="st0" layoutX="215.0" layoutY="160.0" prefHeight="51.0" prefWidth="19.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="st1" layoutX="215.0" layoutY="212.0" prefHeight="51.0" prefWidth="19.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="st2" layoutX="387.0" layoutY="212.0" prefHeight="55.0" prefWidth="6.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="st5" layoutX="558.0" layoutY="212.0" prefHeight="51.0" prefWidth="19.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="st4" layoutX="558.0" layoutY="160.0" prefHeight="51.0" prefWidth="19.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="st6" layoutX="286.0" layoutY="261.0" prefHeight="51.0" prefWidth="19.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="st3" layoutX="526.0" layoutY="105.0" prefHeight="51.0" prefWidth="19.0" text="*" textFill="#e80202" visible="false">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

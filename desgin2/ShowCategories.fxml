@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--stylesheets="@../../../../../Downloads/StoreKeeper-master/StoreKeeper-master/src/style/btnOnText.css-->
+
+<Group xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="503.0" prefWidth="371.0" stylesheets="@styleShowCategories.css">
+         <children>
+            <Label fx:id="lblContent" layoutX="19.0" layoutY="14.0" text=" Categories">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="92.0" fitWidth="98.0" layoutX="136.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
+            <Separator layoutX="135.0" layoutY="84.0" orientation="VERTICAL" prefHeight="92.0" prefWidth="7.0" />
+            <Separator layoutX="233.0" layoutY="84.0" orientation="VERTICAL" prefHeight="92.0" prefWidth="7.0" />
+            <Separator layoutX="137.0" layoutY="81.0" prefHeight="7.0" prefWidth="98.0" />
+            <Separator layoutX="137.0" layoutY="173.0" prefHeight="7.0" prefWidth="98.0" />
+            <TextField fx:id="tfUnitName" layoutX="55.0" layoutY="181.0" prefHeight="33.0" prefWidth="245.0" promptText="Name" stylesheets="@styleShowCategories.css" />
+            <Button fx:id="btnUpdate" layoutX="253.0" layoutY="457.0" mnemonicParsing="false" text="Update" />
+            <Button fx:id="btnUpdate1" layoutX="138.0" layoutY="457.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" text="Cancel" />
+            <TextField layoutX="58.0" layoutY="223.0" prefHeight="33.0" prefWidth="245.0" promptText="Count" stylesheets="@styleShowCategories.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnClrUnitName" layoutX="265.0" layoutY="183.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="33.0" stylesheets="@btnWithText.css" />
+            <Button fx:id="btnClrUnitName1" layoutX="265.0" layoutY="225.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="33.0" stylesheets="@btnWithText.css" />
+            <TextField layoutX="58.0" layoutY="263.0" prefHeight="33.0" prefWidth="245.0" promptText="Price" stylesheets="@styleShowCategories.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnClrUnitName11" layoutX="265.0" layoutY="265.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="33.0" stylesheets="@btnWithText.css" />
+            <TextField layoutX="55.0" layoutY="310.0" prefHeight="33.0" prefWidth="245.0" promptText="Color" stylesheets="@styleShowCategories.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnClrUnitName111" layoutX="265.0" layoutY="312.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="33.0" stylesheets="@btnWithText.css" />
+            <ColorPicker layoutX="142.0" layoutY="312.0" prefHeight="29.0" prefWidth="89.0" style="-fx-background-color: #ffffff;" />
+            <TextArea fx:id="taSupplyerDescription" layoutX="55.0" layoutY="349.0" prefHeight="100.0" prefWidth="245.0" promptText="Description" style="-fx-background-color: #ffffff;" />
+            <Button fx:id="btnClose" layoutX="331.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="33.0" stylesheets="@btnWithText.css" />
+         </children>
+
+      </AnchorPane>
+   </children>
+</Group>

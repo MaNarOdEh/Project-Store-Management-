@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.settingController">
+   <children>
+      <ImageView fitHeight="464.0" fitWidth="630.0" layoutX="1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/ididid.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="85.0" layoutY="18.0" prefHeight="50.0" prefWidth="463.0" style="-fx-background-color: #782626;" text="                  General Account Setting" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="34.0" layoutX="33.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/sett.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="34.0" layoutX="1.0" layoutY="421.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane layoutX="134.0" layoutY="85.0" opacity="0.83" prefHeight="320.0" prefWidth="357.0" style="-fx-background-color: #FFFAF6; -fx-border-width: 3; -fx-border-color: #782626;" styleClass="#EDEDED">
+         <children>
+            <JFXButton fx:id="password" layoutX="77.0" layoutY="55.0" onAction="#goToAnoutherPage" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #279AC6;" text="Change Account Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="userName" layoutX="77.0" layoutY="109.0" onAction="#goToAnoutherPage" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #FDD158;" text="Change User Name" textFill="#9a671b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="emailAccount" layoutX="77.0" layoutY="168.0" onAction="#goToAnoutherPage" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #279AC6;" text="Change  Email Account " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="componyCapital" layoutX="77.0" layoutY="231.0" onAction="#goToAnoutherPage" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #FDD158;" text="Change  The company's capital" textFill="#9a671b">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

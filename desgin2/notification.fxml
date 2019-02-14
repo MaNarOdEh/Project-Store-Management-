@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="624.0" stylesheets="@notific.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.notificationController">
+   <children>
+      <Label fx:id="labelName" layoutX="1.0" prefHeight="68.0" prefWidth="624.0" text="              Notification" textFill="#00a79d">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="listViewNotification" layoutX="1.0" layoutY="66.0" prefHeight="397.0" prefWidth="624.0" style="-fx-border-color: #00a79d;" stylesheets="@notific.css" />
+      <ImageView fitHeight="68.0" fitWidth="88.0" layoutX="1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/notfication1.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="clickMe" layoutX="521.0" layoutY="13.0" onAction="#back" prefHeight="40.0" prefWidth="96.0" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label fx:id="labelMasseage" layoutX="5.0" layoutY="75.0" prefHeight="88.0" prefWidth="616.0" stylesheets="@notific.css">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="labelGoods" layoutX="1.0" layoutY="175.0" prefHeight="88.0" prefWidth="625.0" style="-fx-background-color: #8BC34A; -fx-text-fill: #ffffff;" stylesheets="@notific.css">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="2.0" layoutY="75.0" prefHeight="88.0" prefWidth="72.0" style="-fx-background-color: #0392D3;" />
+      <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="22.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/C.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="2.0" layoutY="175.0" prefHeight="88.0" prefWidth="72.0" style="-fx-background-color: #78A840;" />
+      <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="22.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/check.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelCategories" layoutX="1.0" layoutY="275.0" prefHeight="88.0" prefWidth="624.0" style="-fx-background-color: #FFC107; -fx-text-fill: #ffffff;" stylesheets="@notific.css">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="2.0" layoutY="275.0" prefHeight="88.0" prefWidth="72.0" style="-fx-background-color: #DCA706;" />
+      <ImageView fitHeight="40.0" fitWidth="33.0" layoutX="22.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/001-exclamation-mark.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="574.0" layoutY="104.0" onMouseClicked="#deleteM" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/002-error.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="577.0" layoutY="204.0" onMouseClicked="#deleteG" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/002-error.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="577.0" layoutY="299.0" onMouseClicked="#deleteC" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/002-error.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ScrollBar layoutX="617.0" layoutY="66.0" orientation="VERTICAL" prefHeight="397.0" prefWidth="14.0" />
+      <Label fx:id="labelOwner" layoutY="370.0" prefHeight="88.0" prefWidth="616.0" style="-fx-background-color: #F44336; -fx-text-fill: #ffffff;" stylesheets="@notific.css">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="2.0" layoutY="370.0" prefHeight="88.0" prefWidth="72.0" style="-fx-background-color: #D33A2F;" />
+      <ImageView fitHeight="40.0" fitWidth="33.0" layoutX="22.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/cancel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="577.0" layoutY="399.0" onMouseClicked="#deleteO" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/002-error.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="labMasseg" layoutX="101.0" layoutY="75.0" prefHeight="40.0" prefWidth="237.0" text="               You have a new Massega !" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="175.0" prefHeight="40.0" prefWidth="217.0" text="              Buy Goods Successful !" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="275.0" prefHeight="40.0" prefWidth="217.0" text="           There is a new  Categories!" textFill="WHITE" />
+      <Label layoutX="122.0" layoutY="370.0" prefHeight="40.0" prefWidth="217.0" text="       You have Owner goods !" textFill="WHITE" />
+   </children>
+</AnchorPane>

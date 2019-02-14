@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desgin2.IntroducingTheSalceController">
+   <children>
+      <ImageView fitHeight="464.0" fitWidth="621.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/ididid.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="6.0" prefHeight="48.0" prefWidth="565.0" style="-fx-background-color: #782626;" text="        Introducing The Salce" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabelSalce" layoutX="27.0" layoutY="164.0" prefHeight="237.0" prefWidth="565.0" />
+      <ImageView fitHeight="49.0" fitWidth="48.0" layoutX="14.0" layoutY="401.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/00.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <DatePicker fx:id="date" layoutX="196.0" layoutY="113.0" prefHeight="25.0" prefWidth="168.0" promptText="Date">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></DatePicker>
+      <TextField fx:id="count" layoutX="201.0" layoutY="71.0" onKeyTyped="#onlyNumber" prefHeight="25.0" prefWidth="158.0" promptText="Count" />
+      <JFXButton fx:id="clickMe" layoutX="382.0" layoutY="106.0" onAction="#done" prefHeight="40.0" prefWidth="96.0" stylesheets="@notific.css" text="Done">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="clickMe1" layoutX="495.0" layoutY="106.0" onAction="#print" prefHeight="40.0" prefWidth="96.0" stylesheets="@notific.css" text="Print">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="name" layoutX="34.0" layoutY="71.0" prefHeight="25.0" prefWidth="158.0" promptText="Name Of Employee" />
+      <JFXButton fx:id="clickMe2" layoutX="167.0" layoutY="406.0" onAction="#deleteSelected" prefHeight="40.0" prefWidth="141.0" stylesheets="@notific.css" text="Delete Selected">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="clickMe3" layoutX="316.0" layoutY="406.0" onAction="#makeInvoices" prefHeight="40.0" prefWidth="141.0" stylesheets="@notific.css" text="Make  Invoices">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ComboBox fx:id="ItemType" layoutX="37.0" layoutY="113.0" opacity="0.9" prefHeight="25.0" prefWidth="152.0" promptText="Item Type" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ComboBox>
+   </children>
+</AnchorPane>
